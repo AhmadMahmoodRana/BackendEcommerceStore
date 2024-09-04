@@ -8,6 +8,7 @@ const connectDb = async () => {
       console.log('CONNECTED SUCCESSFULLY');
    } catch (error) {
       console.log('DONOT CONNECTED SUCCESSFULLY', error);
+      process.exit(1);
    }
 };
 export default connectDb;
