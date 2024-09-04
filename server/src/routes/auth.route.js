@@ -3,8 +3,8 @@ import { login, logout, signup } from "../controller/authentication.controller.j
 
 const auth = Router()
 
-auth.get('/signup',signup)
-auth.get('/login',login)
-auth.get('/logout',logout)
+auth.post('/signup',signup)
+auth.post('/login',login)
+auth.post('/logout',logout)
 
 export default auth;
